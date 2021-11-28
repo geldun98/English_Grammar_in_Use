@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+ 
+  <title>English Grammar in Use</title>
+</head>
+<body>
+  <div class="name">
+    <input type="text" class="name-input" placeholder="Enter your full name" onfocus="focusName()" onkeyup="enterSubmit(event)">
+     <div class="name-submit" onclick="submitName()" >Submit</div>
+     <div class="name-check check-input">Please enter your full name</div>
+  </div>
+  <div class="app check-end">
+    <!-- Loading image -->
+    <div class="loading-image" style="display: none;">
+      <img src="./img/pic0.jpg" alt="">
+      <img src="./img/pic1.jpg" alt="">
+      <img src="./img/pic2.jpg" alt="">
+      <img src="./img/pic3.jpg" alt="">
+      <img src="./img/pic4.jpg" alt="">
+      <img src="./img/pic5.jpg" alt="">
+      <img src="./img/icon.svg" alt="">
+     
+    </div>
+    <div class="modal ">
+      <div class="modal-btn" onclick="next_question()">
+        <img src="./img/icon.svg" alt="" class="filter-blue">
+      </div>
+    </div>
+    <div class="question">
+      <div class="question-image">
+        <img src="" alt="" class="show-image">
+      </div>
+     <h3 class="question-show"></h3>
+    </div>
+    <div class="checkResult">
+      <div class="checkResult-btn" onclick="check_result()">Check</div>
+    </div>
+    <div class="answer">
+      <div class="answer-list-btn">
+        <button class="answer-btn" onclick="check_btn(event)">crossing</button>
+        <button class="answer-btn" onclick="check_btn(event)">hiding</button>
+        <button class="answer-btn" onclick="check_btn(event)">scratching</button>
+        <button class="answer-btn" onclick="check_btn(event)">taking</button>
+        <button class="answer-btn" onclick="check_btn(event)">tying</button>
+        <button class="answer-btn" onclick="check_btn(event)">waving</button>
+      </div>
+    </div>
+  </div>
+  <div class="endgame check-end">
+    <h3 class="endgame-nameUser"></h3>
+    <p class="endgame-score"></p>
+    <p class="endgame-view"></p>
+   
+  </div>
+</body>
+<script src="./main.js"></script>
+<script type="application/javascript" src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
+</html>

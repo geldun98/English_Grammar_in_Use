@@ -1,0 +1,22 @@
+.answer {
+  height: 30vh;
+  background-color: darkblue;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &-list-btn {
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 1rem;
+    column-gap: 1rem;
+  }
+  &-btn {
+    color: darkblue;
+    border: 2px solid black;
+    font-size: 1.6rem;
+    padding: 1rem;
+    border-radius: 1rem;
+  }
+}

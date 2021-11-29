@@ -1,15 +1,17 @@
 .question {
-  height: 50vh;
-  background-color: $white;
-  color: $darkblue;
-  padding: 2rem;
+  height: 45vh;
+  background-color: white;
+  color: black;
+  padding-left: 2rem;
+  padding-right: 1rem;
   &-show {
+    padding-top: 1rem;
     font-size: 2.5rem;
     font-weight: 400;
   }
 
   &-image {
-    height: 30vh;
+    height: 25vh;
     img {
       width: 100%;
       height: 100%;
@@ -19,7 +21,7 @@
   &-input {
     display: inline-block;
 
-    border: 0.3rem solid black;
+    border: 2px solid #ccc;
     border-radius: 1.5rem;
     padding: 0.5rem;
     font-size: 2.5rem;

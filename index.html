@@ -27,20 +27,14 @@
       <img src="./img/icon.svg" alt="">
      
     </div>
-    <div class="modal ">
-      <div class="modal-btn" onclick="next_question()">
-        <img src="./img/icon.svg" alt="" class="filter-blue">
-      </div>
-    </div>
+    
     <div class="question">
       <div class="question-image">
         <img src="" alt="" class="show-image">
       </div>
      <h3 class="question-show"></h3>
     </div>
-    <div class="checkResult">
-      <div class="checkResult-btn" onclick="check_result()">Check</div>
-    </div>
+    
     <div class="answer">
       <div class="answer-list-btn">
         <button class="answer-btn" onclick="check_btn(event)">crossing</button>
@@ -49,6 +43,19 @@
         <button class="answer-btn" onclick="check_btn(event)">taking</button>
         <button class="answer-btn" onclick="check_btn(event)">tying</button>
         <button class="answer-btn" onclick="check_btn(event)">waving</button>
+      </div>
+    </div>
+    <div class="check">
+      <div class="checkResult ">
+        <div class="checkResult-btn " onclick="check_result()">Check</div>
+      </div>
+      <div class="check-true trueNext">
+        <span class="check-true-title">Correct!</span>
+        <div class="check-true-next " onclick="next_question()">Next</div>
+      </div>
+      <div class="check-false trueNext">
+        <span class="check-false-title">Wrong!</span>
+        <div class="check-false-next" onclick="next_question()">Next</div>
       </div>
     </div>
   </div>

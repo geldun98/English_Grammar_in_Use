@@ -50,14 +50,18 @@ function check_result() {
 
   if (answer === listTrueAnswer[idQuestion]) {
     score = score + 1;
-    document.querySelector('.question-input').classList.add('true-input');
+    document.querySelector('.checkResult').classList.add('trueNext');
+    document.querySelector('.check-true').classList.remove('trueNext');
   } else {
-    document.querySelector('.question-input').classList.add('false-input');
+    document.querySelector('.checkResult').classList.add('trueNext');
+    document.querySelector('.check-false').classList.remove('trueNext');
   }
-  document.querySelector('.modal').classList.add('modal-true');
 }
 function next_question() {
-  document.querySelector('.modal').classList.remove('modal-true');
+  document.querySelector('.checkResult').classList.remove('trueNext');
+  document.querySelector('.check-true').classList.add('trueNext');
+  document.querySelector('.check-false').classList.add('trueNext');
+
   idQuestion = idQuestion + 1;
   if (idQuestion < listQuestion.length) {
     start(idQuestion);

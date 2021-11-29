@@ -1,0 +1,44 @@
+.answer {
+  position: relative;
+  width: 95%;
+  border: 5px solid black;
+  border-right: 0;
+  background-color: #e0e0e0;
+  margin: 0 auto;
+}
+.section {
+  border-right: none;
+  width: 100%;
+  height: 230px;
+  margin: 0 auto;
+  text-align: center;
+  white-space: nowrap;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  scroll-snap-type: y mandatory;
+
+  &__item {
+    width: 100%;
+    min-height: 50px;
+    line-height: 50px;
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-top: 20px;
+    scroll-snap-align: center;
+    &:last-child {
+      margin-bottom: 20px;
+    }
+  }
+  &__choose {
+    position: absolute;
+
+    width: calc(100% - 5px);
+    height: 50px;
+    background-color: #3498db67;
+    top: 20px;
+  }
+}
+.hiddenColor {
+  background-color: transparent;
+}

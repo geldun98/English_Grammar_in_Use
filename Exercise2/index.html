@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:image" content="https://github.com/geldun98/English_Grammar_in_Use/blob/master/img/logo.jpg?raw=true" />
+  <link rel="stylesheet" href="./css/style.css">
+  <title>English Grammar in Use</title>
+</head>
+<body>
+  
+  <div class="name">
+    <input type="text" class="name-input" placeholder="Enter your full name" onfocus="focusName()" onkeyup="enterSubmit(event)">
+     <div class="name-submit" onclick="submitName()" >Submit</div>
+     <div class="name-check check-input">Please enter your full name</div>
+  </div>
+
+  
+   <div class="app check-end ">
+     <div class="question">
+       <h3 class="question-show">This is the question</h3>
+     </div>
+    <div class="answer">
+      <div class="section" onscroll="checkscroll(event)">
+        <div class="section__choose"></div>    
+        <div class="section__item "></div>
+        <div class="section__item">Item 1</div>
+        <div class="section__item">Item 2</div>
+        <div class="section__item">Item 3</div>
+        <div class="section__item">Item 4</div>
+        <div class="section__item "></div>
+        <div class="section__item "></div>
+       
+      </div>
+
+
+    </div>
+    <div class="check">
+      <div class="check-btn " onclick="handleCheck()">Ok</div>
+      <div class="check-next-true trueNext ">
+        <span class="check-next-true-showResult">
+          <img src="./img/check-circle-solid.svg" alt="" class="filter-blue">
+          Correct!</span>
+        <div class="check-next-true-btn" onclick="handleNext()">Next</div>
+      </div>
+      <div class="check-next-false trueNext">
+        <span class="check-next-false-showResult">
+          <img src="./img/times-circle-solid.svg" alt="" class="filter-red">
+          Wrong!</span>
+        <div class="check-next-false-btn" onclick="handleNext()">Next</div>
+      </div>
+    </div>
+
+   </div>
+  <div class="endgame check-end">
+    <h3 class="endgame-nameUser"></h3>
+    <p class="endgame-score"></p>
+    <p class="endgame-view"></p>
+   
+  </div>
+  
+</body>
+<script src="./main.js"></script>
+<script type="application/javascript" src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
+</html>

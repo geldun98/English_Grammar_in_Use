@@ -1,0 +1,10 @@
+.question {
+  height: 15rem;
+  &-show {
+    padding-top: 3rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: 2.2rem;
+    font-weight: 400;
+  }
+}

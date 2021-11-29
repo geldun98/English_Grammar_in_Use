@@ -34,12 +34,15 @@ const showListQuestion = showListArrayQuestion.map((question) => question.join('
 
 let idQuestion = 0;
 function start(id) {
+  document.querySelector('.checkResult-btn').classList.add('hideBtn');
+  document.getElementById('anwserPointer').style.pointerEvents = 'auto';
   document.querySelector('.question-show').innerHTML = showListQuestion[id];
   document.querySelector('.show-image').src = `./img/pic${id}.jpg`;
 }
 start(idQuestion);
 
 function check_btn(e) {
+  document.querySelector('.checkResult-btn').classList.remove('hideBtn');
   const answer_input = e.target.innerHTML;
   const question_input = document.querySelector('.question-input');
   question_input.innerHTML = answer_input;
@@ -47,7 +50,7 @@ function check_btn(e) {
 let score = 0;
 function check_result() {
   const answer = document.querySelector('.question-show').textContent;
-
+  document.getElementById('anwserPointer').style.pointerEvents = 'none';
   if (answer === listTrueAnswer[idQuestion]) {
     score = score + 1;
     document.querySelector('.checkResult').classList.add('trueNext');

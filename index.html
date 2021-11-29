@@ -36,7 +36,8 @@
     </div>
     
     <div class="answer">
-      <div class="answer-list-btn">
+      <div class="answer-list-btn" id="anwserPointer">
+        
         <button class="answer-btn" onclick="check_btn(event)">crossing</button>
         <button class="answer-btn" onclick="check_btn(event)">hiding</button>
         <button class="answer-btn" onclick="check_btn(event)">scratching</button>
@@ -47,7 +48,7 @@
     </div>
     <div class="check">
       <div class="checkResult ">
-        <div class="checkResult-btn " onclick="check_result()">Check</div>
+        <div class="checkResult-btn hideBtn" onclick="check_result()">Check</div>
       </div>
       <div class="check-true trueNext">
         <span class="check-true-title">Correct!</span>

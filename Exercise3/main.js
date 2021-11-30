@@ -38,7 +38,7 @@ let listAnswer = [
   ['Are you watching'],
   [`It's getting`, `It is getting`],
   [`Tom is not working`, `Tom isn't working`, `Tom's not working`],
-  [`Is Kate enjoying`],
+  [`Is Kata enjoying`],
   [`She's doing`, `She is doing`],
   [`It is increasing`, `it's increasing`],
   [`are you laughing`],

@@ -1,4 +1,5 @@
 let idQuestion = 0;
+let state = 0;
 let score = 0;
 let name;
 let information;
@@ -60,13 +61,21 @@ const showAnswer = [
   `<div class="section__item "></div>`,
   `<div class="section__item "></div>`,
 ];
-let selectAnswer = '.....';
+let selectAnswer = '....';
 function handleAnswer() {
   document.querySelector('.section').innerHTML = showAnswer.join(' ');
 }
 handleAnswer();
 
 function showQuestion(id) {
+  if (selectAnswer !== '....') {
+    document.querySelector('.check-btn').classList.remove('hideBtn');
+  }
+  if (id === state) {
+    document.querySelector('.check-btn').classList.add('hideBtn');
+    console.log(state, id);
+    state = state + 1;
+  }
   document.querySelector('.question-show').innerHTML = `${listQuestion[id]} ${selectAnswer}`;
 }
 showQuestion(idQuestion);

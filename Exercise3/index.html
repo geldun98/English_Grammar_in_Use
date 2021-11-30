@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:image" content="https://github.com/geldun98/English_Grammar_in_Use/blob/master/img/logo.jpg?raw=true" />
+  <link rel="stylesheet" href="./css/style.css">
+  <title>English Grammar in Use</title>
+</head>
+<body>
+  <div class="name">
+    <input type="text" class="name-input" placeholder="Enter your full name" onfocus="focusName()" onkeyup="enterSubmit(event)">
+     <div class="name-submit" onclick="submitName()" >Submit</div>
+     <div class="name-check check-input">Please enter your full name</div>
+  </div>
+
+  <div class="app check-end">
+    
+    <div class="question" onkeydown="handleActive()" >
+      <div class="question-show">
+      </div>
+    </div>
+    <div class="check">
+      <div class="check-result">
+        <div class="check-result-button" onclick="handleCheck()">OK</div>
+      </div>
+
+      <div class="check-true activeNone">
+        <span class="check-true-show">
+          <img src="./img/check-circle-solid.svg" alt="" class="filter-blue">
+          Correct!
+        </span>
+        <div class="check-true-button" onclick="handleNext()">Next</div>
+      </div>
+
+      <div class="check-false activeNone">
+        <span class="check-false-show">
+          <img src="./img/times-circle-solid.svg " alt="" class="filter-red">
+          Wrong!
+        </span>
+        <div class="check-false-button " onclick="handleNext()">Next</div>
+      </div>
+       
+    </div>
+  </div>
+  <div class="endgame check-end">
+    <h3 class="endgame-nameUser"></h3>
+    <p class="endgame-score"></p>
+    <p class="endgame-view"></p>
+   
+  </div>
+  <script src="./main.js"></script>
+  <script type="application/javascript" src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
+</body>
+</html>

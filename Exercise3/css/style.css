@@ -1,0 +1,260 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600&display=swap");
+.name {
+  width: 100%;
+  max-width: 37.5rem;
+  height: 100vh;
+  margin: 0 auto;
+  background-color: #d1d8e0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.name-input {
+  margin-top: 10vh;
+  height: 10vh;
+  font-size: 3rem;
+  width: 80%;
+  outline: none;
+  border: none;
+}
+.name-submit {
+  margin-top: 2rem;
+  background-color: #1cb0f6;
+  display: inline-block;
+  color: white;
+  font-size: 3rem;
+  padding: 1rem 10rem;
+  border-radius: 1rem;
+  box-shadow: 0px 0.5rem 0px 0px #1899d6;
+}
+.name-check {
+  margin-top: 10vh;
+  color: white;
+  font-size: 3rem;
+  background-color: #eb3b5a;
+  width: 100%;
+  height: 20vh;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.check-input {
+  display: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #95a5a6;
+}
+
+.check-end {
+  display: none !important;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #ccc;
+}
+
+::-webkit-scrollbar-thumb {
+  background: black;
+}
+
+.activeNone {
+  display: none !important;
+}
+
+.hideActive {
+  background-color: #dfe4ea !important;
+  color: #c5c5c5 !important;
+  box-shadow: none !important;
+  pointer-events: none !important;
+}
+
+.check-end {
+  display: none;
+}
+
+.app {
+  width: 100%;
+  max-width: 37.5rem;
+  height: 100vh;
+  margin: 0 auto;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.question {
+  width: 100%;
+  height: 50vh;
+}
+.question-show {
+  padding: 2rem;
+  font-size: 2.5rem;
+}
+.question-show span {
+  font-size: 2.5rem;
+  display: inline-block !important;
+  min-width: 8rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  max-width: 100%;
+  text-decoration: none !important;
+}
+
+.inputAnswer {
+  border: 2px solid #ccc;
+  outline: none;
+  text-decoration: none;
+}
+.inputAnswer br {
+  display: none;
+}
+
+.inputAnswer:hover {
+  border-color: #8e44ad;
+}
+
+.check-result {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white !important;
+}
+.check-result-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30rem;
+  height: 5rem;
+  background-color: #9b59b6;
+  color: white;
+  font-size: 2.5rem;
+  margin: 0 auto;
+  border-radius: 1rem;
+  box-shadow: 0 5px 0 0 #8e44ad;
+}
+.check-true {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e2f6ff;
+  position: relative;
+}
+.check-true-show {
+  display: flex;
+  align-items: center;
+  font-size: 2.5rem;
+  font-weight: 600;
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  color: #3498db;
+}
+.check-true-show img {
+  width: 3rem;
+  margin-right: 1rem;
+}
+.check-true-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30rem;
+  height: 5rem;
+  background-color: #3498db;
+  color: white;
+  font-size: 2.5rem;
+  margin: 0 auto;
+  border-radius: 1rem;
+  box-shadow: 0 5px 0 0 #1c75b1;
+}
+.check-false {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff2f1;
+  position: relative;
+}
+.check-false-show {
+  display: flex;
+  align-items: center;
+  font-size: 2.5rem;
+  font-weight: 600;
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  color: #ff5467;
+}
+.check-false-show img {
+  width: 3rem;
+  margin-right: 1rem;
+}
+.check-false-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30rem;
+  height: 5rem;
+  background-color: #ff5467;
+  color: white;
+  font-size: 2.5rem;
+  margin: 0 auto;
+  border-radius: 1rem;
+  box-shadow: 0 5px 0 0 #cc283b;
+}
+
+.filter-blue {
+  filter: invert(59%) sepia(18%) saturate(3662%) hue-rotate(177deg) brightness(88%) contrast(94%);
+}
+
+.filter-red {
+  filter: invert(44%) sepia(59%) saturate(709%) hue-rotate(305deg) brightness(99%) contrast(105%);
+}
+
+.endgame {
+  width: 100%;
+  height: 100vh;
+  background-color: #130f40;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.endgame-nameUser {
+  color: #3498db;
+  font-size: 4rem;
+}
+.endgame-score {
+  color: #e74c3c;
+  font-size: 4rem;
+}
+.endgame-view {
+  margin-top: 2rem;
+  color: #fa8231;
+  font-size: 3rem;
+}
+
+/*# sourceMappingURL=style.css.map */
